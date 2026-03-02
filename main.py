@@ -105,8 +105,8 @@ if __name__ == '__main__':
     from pathlib import Path
 
     # 在这里配置你的参数，修改后直接双击运行
-    INPUT_FOLDER = r"E:\music\VipSongsDownload"  # 存放NCM文件的文件夹
-    OUTPUT_FOLDER = r"E:\music\VipSongsDownload\已转换"  # 转换后文件的输出文件夹
+    INPUT_FOLDER = r"D:\ncm"  # 存放NCM文件的文件夹
+    OUTPUT_FOLDER = r"D:\mp3"  # 转换后文件的输出文件夹
     RECURSIVE_SCAN = False  # 是否扫描子文件夹里的NCM文件（True/False）
     DELETE_ORIGINAL = False  # 转换成功后是否删除原NCM文件（True/False）
     # ================================================================

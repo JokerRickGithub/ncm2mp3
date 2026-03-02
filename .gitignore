@@ -1,10 +1,58 @@
-# Python-generated files
+# ==================== Python 核心忽略规则 ====================
+# Python编译生成的字节码文件
 __pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
+*.py[oc]          # .pyo/.pyc文件（Python编译后的字节码）
+*.pyd             # Windows下的Python扩展模块
+*.so              # Linux/Mac下的Python扩展模块
 
-# Virtual environments
-.venv
+# 打包/构建产物（PyInstaller相关）
+build/            # PyInstaller构建过程生成的文件夹
+#dist/             # PyInstaller打包后的产物文件夹
+*.spec            # 若spec文件是自动生成且无需版本控制可取消注释（你的spec是项目配置，建议保留，故注释）
+# NCM音乐转换器.spec  
+
+# Python包构建相关
+wheels/
+*.egg-info/
+*.egg
+sdist/
+
+# ==================== 虚拟环境 & 包管理 ====================
+# venv虚拟环境（你项目中的.venv）
+.venv/
+venv/
+env/
+ENV/
+*.env             # 环境变量文件（若有敏感配置如密钥，务必忽略）
+*.env.local
+
+# uv包管理工具相关（你的项目有uv.lock）
+#uv.lock           # uv的锁文件（可选忽略，若团队开发建议提交，单人可忽略）
+
+# pyenv版本文件（可选忽略，若需统一开发环境可提交）
+#.python-version
+
+# ==================== 操作系统 & 编辑器 ====================
+# Windows系统文件
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# 编辑器配置（根据你使用的工具添加）
+.idea/            # PyCharm
+.vscode/          # VSCode
+*.suo             # Visual Studio
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ==================== 项目专属忽略 ====================
+# 日志文件（若项目运行生成日志）
+*.log
+logs/
+
+# 临时文件/缓存文件
+*.tmp
+*.temp
+.cache/
