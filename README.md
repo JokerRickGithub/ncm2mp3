@@ -59,6 +59,12 @@ python main.py 歌曲.ncm -o /path/to/output
 python main.py 歌曲.ncm -m
 ```
 
+
+### 方式三：已经打包好的程序
+dist/NCM音乐转换器.exe
+双击打开后，将ncm后缀文件拖入界面，点击导出后，会自行导出到ncm文件所在文件夹
+
+
 #### 完整参数说明
 | 参数 | 说明 |
 |------|------|
